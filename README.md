@@ -58,5 +58,15 @@ The analysis of the election show that:
 
 
 ## Election-Audit Summary
-In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
+This section contains a summary statement that provides a business proposal to the election commission on how this script can be used—with some modifications—for any election. I will give two examples of how this script can be modified to be used for other elections.
 
+In summary, I was able to use the python script [PyPoll_Challenge.py](PyPoll_Challenge.py) to analyze the results of the election. With a few simple modifications, the script can be used to analyze the outcomes of other elections. The input to the analysis requires only a .csv file that contains the results from the election by Ballot ID, County, and Candidate. 
+
+To use the script for other elections, the script can be modified as follows:
+1. Change the following line of code for the variable to load a file from a path with the path and the name of the file where the results of the election are located:
+
+`file_to_load = os.path.join("Resources", "election_results.csv")`
+
+2. Change the following line of code for the variable to save the file to a path with the path and the name of the file where the results of the analysis of the election should be written to:
+
+`file_to_save = os.path.join("analysis", "election_results.txt")`
